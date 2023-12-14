@@ -77,3 +77,8 @@ ul {
 li {
     text-align: left; 
 }
+
+.large-link {
+    font-size: 24px; 
+    font-weight: bold;
+}
