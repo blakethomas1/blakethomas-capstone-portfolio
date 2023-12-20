@@ -4,54 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #333;
+        }
+        .header {
+            background: url('path/to/your/background-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            background: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .nav-links {
+            list-style-type: none;
+            padding: 20px 0;
+            text-align: center;
+            background-color: #fff;
+            margin-top: -10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1.1em;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Blake Thomas</h1>
-        <h2>Algogauge Capstone</h2>
-        <a href="https://github.com/19terickson/AlgoGaugeCapstone" class="large-link" target="_blank">Github Repo</a>
-    </header>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover My Projects & Creations</p>
+        </div>
     
-    <section id="capstone-project">
-        <h2>Capstone Project</h2>   
-        <p>My capstone project is a MERN application that takes 2 sorting algorithms, compares the speed of them and outputs the results to the user. The project was a group effort of 
-            Blake Thomas, Trace Erickson, Hunter Ferrin, and Jaren Montano.
-        </p>
-        <p>The Algogauge group set out to create a MERN (MongoDB, Express.js, React, Node.js) application that would enable users to input two different algorithms and compare their execution speeds. While we successfully implemented most aspects of the application, the C++ backend necessary for testing the algorithms' speeds was not completed.
-        </p>
-
-
-        <section id="capstone-project">
-            <div class="gif-container">
-                <h3>User selecting algorithms</h3>
-                <img src="Videos/gif1.gif" alt="Description of GIF">
-                <p>This video shows the user's ability to select two different algorithms to test their speed against each other.</p>
-                <p>It also shows the user's ability to join a queue.</p>
-            </div>
-        </section>
-
-        <section id="capstone-project">
-            <div class="gif-container">
-                <h3>User viewing results</h3>
-                <img src="Videos/gif2.gif" alt="Description of GIF">
-                <p>This video shows the user's ability to see the results at the end of a run.</p>
-                <p>They are also able to see the resutls from thier prior runs and all other user's previous runs.</p>
-            </div>
-        </section>
-
-        <section id="capstone-project">
-            <div class="gif-container">
-                <h3>User viewing specifics about prior runs</h3>
-                <img src="Videos/ezgif.com-optimize.gif" alt="Description of GIF">
-                <p>This video shows the user's ability to see the specifics about a prior run.</p>
-            </div>
-        </section>
-
-    </section>
-    <section id="capstone-project"><a href="mywork.html">My Work</a></section>
-    <footer>
-        <p>Contact me: <a href="mailto:your.email@example.com">xblake38@gmail.com</a></p>
-    </footer>
+        <ul class="nav-links">
+            <li><a href="capstoneGroupWork.html">Capstone</a></li>
+            <li><a href="djanoFinalProject.html">Django Final Project</a></li>
+            
+            <li><a href="aboutMe.html">About Me</a></li>
+        </ul>
+    
+        <div class="content">
+            <p>Here you can find a showcase of my work, including various projects and contributions in the field of Software Engineering/Full Stack Development. Feel free to navigate through the galleries and learn more about me.</p>
+        </div>
+    
+        <footer>
+            <p>Contact me: <a href="mailto:your.email@example.com">xblake38@gmail.com</a></p>
+            <p>Phone: (801) 643-3133</p>
+        </footer>
+    </div>
+    
 </body>
 </html>

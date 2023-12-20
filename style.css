@@ -82,3 +82,11 @@ li {
     font-size: 24px; 
     font-weight: bold;
 }
+
+.ptag{
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-justify: inter-word;
+    padding: 0 20px; 
+}
