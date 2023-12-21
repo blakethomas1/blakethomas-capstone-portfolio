@@ -90,3 +90,50 @@ li {
     text-justify: inter-word;
     padding: 0 20px; 
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    .large-link {
+        font-size: 20px;
+    }
+
+    section#capstone-project {
+        padding: 0.5rem;
+        max-width: 95%;
+    }
+
+    .ptag {
+        padding: 0 10px;
+    }
+
+    ul {
+        width: auto; /* Adjusts the width of unordered lists for smaller screens */
+    }
+
+    img {
+        width: auto; /* Adjusts image width to be responsive */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    .large-link {
+        font-size: 18px; /* Further reduced font size for very small screens */
+    }
+
+    .video-container video {
+        width: 100%; /* Ensure videos are fully responsive */
+    }
+}
