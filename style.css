@@ -72,6 +72,8 @@ ul {
     margin-right: auto; 
     width: max-content; 
     list-style-position: outside; 
+    padding-left: 20px; /* Add padding to allow space for bullet points */
+    list-style-type: disc; /* Ensure the list style is set */
 }
 
 li {
@@ -87,7 +89,6 @@ li {
     text-align: justify;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-justify: inter-word;
     padding: 0 20px; 
 }
 
@@ -116,7 +117,8 @@ img {
     }
 
     ul {
-        width: auto; /* Adjusts the width of unordered lists for smaller screens */
+        padding-left: 15px; /* Adjust padding for smaller screens */
+        width: auto; /* Adjust width for smaller screens */
     }
 
     img {
