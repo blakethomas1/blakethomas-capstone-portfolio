@@ -66,15 +66,21 @@
             background-color: #0056b3;
         }
         .profile-pic {
-            width: 150px; 
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover; 
-            display: block;
-            margin: 0 auto; 
-            border: 3px solid #fff; 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+            width: 100px; /* Default size for mobile */
+        height: 100px; /* Default size for mobile */
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border: 3px solid #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
+        @media screen and (min-width: 768px) {
+            .profile-pic {
+                width: 200px; /* Larger size for desktop */
+                height: 200px; /* Larger size for desktop */
+        }
+}
     </style>
 </head>
 <body>
